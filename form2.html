@@ -1,0 +1,102 @@
+<html>
+	<head>
+		<title>Form to Fill 2| Javasript Validation</title>
+
+		<link rel="stylesheet" type="text/css" href="stylesheets/cssforform.css">
+
+		<script src="javascript/scriptforform.js"></script>
+	</head>
+
+	<body>
+		<div id="container">
+			<div>
+				<p>1</p>
+				<input id="text1" type="text"/>
+				<input id="bAdd1" type="button" value="Add" onclick="Add(1)"/>
+				<input id="bUndo1" type="button" value="Undo" onclick="Undo(0)"/>
+				<br/>
+
+				<select multiple id="select1">
+				</select>
+			</div>
+
+			<div>
+				<p>2</p>
+				<input id="text2" type="text"/>
+				<input id="bAdd2" type="button" value="Add" onclick="Add(2)"/>
+				<input id="bUndo2" type="button" value="Undo" onclick="Undo(1)"/>
+				<br/>
+
+				<select multiple id="select2">
+				</select>
+			</div>
+
+			<div>
+				<p>3</p>
+				<table>
+					<tr>
+						<td id="contact">
+							Contact:<br/>
+							<select multiple id="select3">
+								<option  value="Mallery">Mallery</option>
+								<option  value="Hugh Stayer">Hugh Stayer</option>
+								<option  value="Malinda Edgington">Malinda Edgington</option>
+								<option  value="Emilia Aceto">Emilia Aceto</option>
+								<option  value="Lonnie Sobus">Lonnie Sobus</option>
+								<option  value="Javier Peveto">Javier Peveto</option>
+								<option  value="Lonnie Behrendt">Lonnie Behrendt</option>
+								<option  value="Rosalinda Shearin">Rosalinda Shearin</option>
+								<option  value="Selena Palmeri">Selena Palmeri</option>
+								<option  value="Erik Tourigny">Erik Tourigny</option>
+								<option  value="Kelly Crimi">Kelly Crimi</option>
+								<option  value="Jamie Band">Jamie Band</option>
+								<option  value="Lonnie Clewis">Lonnie Clewis</option>
+								<option  value="Julio Mo">Julio Mo</option>
+								<option  value="Carlene Parlier">Carlene Parlier</option>
+								<option  value="Bumbalough">Bumbalough</option>
+								<option  value="Tyrone Bonnie">Tyrone Bonnie</option>
+								<option  value="Nannie Disanto">Nannie Disanto</option>
+								<option  value="Melisa Gladstone">Melisa Gladstone</option>
+								<option  value="Darren Schmaltz">Darren Schmaltz</option>
+							</select>
+						</td>
+
+						<td align="center">
+							<input id="bAdd3" type="button" value="Add->" onclick="transfer(1)"/> <br/> <br/> <br/>
+							<input id="bRemove1" type="button" value="<- Remove" onclick="transfer(2)"/>
+						</td>
+
+						<td id="scontact">
+							Selected Contact:<br/>
+							<select multiple id="select4">
+							</select>
+						</td>
+
+						<td align="center">
+							<input id="moveUp" type="button" value="Move Up" onclick="MoveUp()"/> <br/> <br/> <br/>
+							<input id="moveDown" type="button" value="Move Down" onclick="MoveDown()"/>
+						</td>
+					</tr>
+				</table>		
+			</div>
+
+			<div>
+				<p>4</p>
+				<table>
+					<tr>
+						<td>
+							<div id="over"><img src="images/tr.png"></div>
+							<div id="overlay"></div>
+						</td>
+
+						<td>
+							Tag Photo <br/>
+							<input type="text" id="tagval"/> <br/>
+							<input type="button" value="Tag" onclick="tag()"/>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</body>
+</html>
